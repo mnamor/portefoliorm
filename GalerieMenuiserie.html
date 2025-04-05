@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Css perso -->
+        <link rel="stylesheet" href="style.css" media="all" type="text/css">
+  <link rel="stylesheet" href="style-galery.css" media="all" type="text/css">
+   
+
+    <!-- icone favori-->
+   <link rel="icon" type="image/png" href="MoranaStudio/image-svg/logomorana_black.svg" />
+     <!-- lien fa fa icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- link font perso-->
+    <link href="font/Supreme%2520LL/SupremeLL-Regular.otf" rel="stylesheet">
+    <link href="font/Quicksand/static/Quicksand-Regular.ttf" rel="stylesheet">
+    <!-- link font google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+    <title>GalerieMenuiserie</title>
+    <style>
+        div.content {
+            margin: 5px;
+            padding: 10px;
+            background-color: transparent;
+            border: none ;
+        }
+        .hidden {
+            display: none;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 8px;
+            background-color: transparent;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d0d0d0;
+        }
+        button.active {
+            background-color: #a0c7e7;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+        <a class="navbar-brand" href="index.html"><h1 id=logonavbar>RM</h1></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+     
+      
+    <li class="nav-item">
+      <a class="nav-link" href="Menuiserie.html">Menuserie
+        </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About.html">Qui je suis
+        </a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact
+        </a>
+    </li>
+
+  </ul>
+    
+</nav>
+    
+    <div class="line"></div>
+      <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="line"></div>
+    <br>
+    
+  
+<!-- navbar boite réalisation -->    
+      <div id="box_aa">
+  <div class="container">
+    <div id="none">
+      <div id="none">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="center">
+            <ul class="no-bullets service-list">
+                <div id="box_b">
+ <li class="padding-service" id="btn1" onclick="toggleDivs(1)" >Menuiserie</li>
+                </div>
+                <div id="box_b">
+  <li class="padding-service" id="btn2" onclick="toggleDivs(2)" >Cusine</li>
+                </div>
+</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    <!-- boite de dialogue dans la quelle s'affiche l'image -->
+    <div id="modal" class="modal">
+  <span class="close" id="closeModal">&times;</span>
+  <img id="modalImg" class="modal-content" />
+  <div id="caption"></div>
+</div>
+    
+    <!--selécetion de catégprie-->
+    <!-- secetion menuiserie-->
+ 
+    <div id="div1" class="content">
+       
+        <div id="box_aa">
+         
+  <div class="container">
+      <h1 class="titre-center">Menuiserie</h1>
+    <div class="line"></div>
+      <br>
+  <!--  <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-12">
+        <div id="box_none">
+          <div id="box_b">
+            <div class="gallery">
+                
+                
+              <div class="gallery-item vertical">
+<img src="menuiserie/1.jpg" alt="Image verticale 1" class="gallery-img" data-full="menuiserie/1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+           <img src="menuiserie/2.jpg" alt="Image verticale 1" class="gallery-img" data-full="menuiserie/1.jpg">
+              </div>
+              <div class="gallery-item vertical">
+      <img src="menuiserie/3.jpg" alt="Image verticale 1" class="gallery-img" data-full="menuiserie/1.jpg">
+              </div>
+              
+              </div>
+              <div class="gallery-4.jpg" alt="Image verticale 1" class="gallery-img" data-full="menuiserie/1.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+        <img src="menuiserie/5.jpg" alt="Image verticale 1" class="gallery-img" data-full="menuiserie/1.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+  
+  </div>     
+</div>
+       
+        <br>
+       
+  
+    <!-- div identité de marque  -->
+    <div id="div2" class="content">
+        <div id="box_aa">
+  <div class="container">
+    <h1 class="titre-center">Cuisine</h1>
+    <div class="line"></div>
+
+    <br>
+      
+    <div class="row">
+      <!-- Section galerie d'images dans box_b -->
+      <div class="col-sm-12">
+          <!-- boite verte -->
+        <div id="box_none">
+            
+          <div id="box_b">
+            <div class="gallery">
+              <div class="gallery-item vertical">
+              <img src="pose_cuisine/1.jpg" alt="Image verticale 1" class="gallery-img" data-full="menuiserie/.jpg">
+              </div>
+              <div class="gallery-item horizontal">
+             
+              </div>
+              <div class="gallery-item vertical">
+                
+              </div>
+              <div class="gallery-item horizontal">
+                
+              </div>
+              <div class="gallery-item vertical">
+               
+              </div>
+              <div class="gallery-item horizontal">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+    </div>
+     
+   
+   
+    </div>
+  </div>
+</div>
+        
+   
+     
+   
+
+    
+    <br>
+    <div id="box_aa">
+  <div class="container">
+  
+        <div class="row">
+          <div class="col-sm-12">
+      
+            <div id="center">
+                          <div id="box_bb">
+      <div id="box_b">
+            <ul class="no-bullets service-list">
+ <li class="padding-service" id="btnAll" onclick="showAllDivs()" >Afficher tous</li>
+  
+</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+     
+    
+      <br>
+    
+    
+<div class="line"></div>
+   <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+<div id=box_footer>
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+ <div id="box_aa">
+<div class="container">
+    <div id="none">
+       <div id="box_b"> 
+  <div class="row">
+      <div class="col-sm-6">
+          <div id="padding-logo-footer">
+          <h1 id=logonavbar>RM </h1>
+              </div>
+    </div>
+     
+      <!-- lien mention légale et condition d'achat -->
+         <div class="col-sm-6">
+      <div id="none">
+       <ul class="no-bullets-footer">
+         <ul class="list-unstyled">
+             <li>Me suivre:</li>
+              <li class="a-link">
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+          </li>
+           <li>
+          </li>
+          <li class="hover-grey">
+            <a href= "" ><i class="ifm" aria-hidden="true"><img class="ifm" src="logo_moranastudio.png"></i>
+              </a>
+          </li>
+          <li class="a-link">
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    </div>
+      
+  </div>
+</div>
+    </div>
+     </div>
+    </div>
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <!-- Links -->
+        <h5 class="text-uppercase"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+             <a href="#!"></a>
+          </li>
+          <li>
+            <a href="#!"></a>
+          </li>
+          <li>
+            <a href="#!"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="footer-copyright text-center py-3"> <a href="https://github.com/mnamor"><i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2023 Roman Malaplate, tout droit réservés.
+  </div>
+  </div>
+</footer>
+<!-- Footer -->
+     <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="Zoom-img.js"></script>
+    
+    <script>
+        // Attendre que le DOM soit complètement chargé
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fonction qui affiche seulement le div sélectionné
+            window.toggleDivs = function(selectedDiv) {
+                // Mettre à jour l'état actif des boutons
+                document.querySelectorAll('.button-container button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('btn' + selectedDiv).classList.add('active');
+                
+                // Cacher tous les divs
+                for (let i = 1; i <= 5; i++) {
+                    const div = document.getElementById('div' + i);
+                    if (i === selectedDiv) {
+                        div.classList.remove('hidden');
+                    } else {
+                        div.classList.add('hidden');
+                    }
+                }
+            };
+            
+            // Fonction qui affiche tous les divs
+            window.showAllDivs = function() {
+                document.querySelectorAll('.button-container button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('btnAll').classList.add('active');
+                
+                for (let i = 1; i <= 5; i++) {
+                    document.getElementById('div' + i).classList.remove('hidden');
+                }
+            };
+            
+            // Fonction qui cache tous les divs
+            window.hideAllDivs = function() {
+                document.querySelectorAll('.button-container button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('btnNone').classList.add('active');
+                
+                for (let i = 1; i <= 5; i++) {
+                    document.getElementById('div' + i).classList.add('hidden');
+                }
+            };
+        });
+    </script>
+    
+    
+    
+     <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    
+</body>
+</html>
