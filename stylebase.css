@@ -1,0 +1,366 @@
+/* ==============================
+   CSS  - Couleurs : Violet, Blue, purple, 
+   ============================== */
+
+/* Variables CSS pour une meilleure maintenance */
+:root {
+    --primary-color:#A0A0F9;        /*violet*/
+    --secondary-color: #514FFB;    /* bleu */ 
+    --purple-color:#9C27B0 ;      /*purple*/
+    --white-color: white;      /* blanc */
+    --black-color: black;     /*noir*/
+    --text-dark: #333;
+    --text-light: #f9f9f9;
+    --bg-light: #f9f9f9;
+}
+
+/* Reset et base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation responsive */
+.navbar {
+    padding: 1rem 0;
+    background-color: transparent !important;
+}
+
+.navbar-logo img {
+    max-height: 50px;
+    width: auto;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--bg-light) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneurs principaux */
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-spacing {
+    padding: 2rem 0;
+}
+
+/* Lignes décoratives */
+.line {
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--purple-color), var(--black-color));
+    margin: 1rem 0;
+    border-radius: 1px;
+}
+.fine-line{
+    height: 1px;
+    width: 100%;
+   background-color: var(--bg-light);
+}
+.blue-line,
+.violet-line,
+.white-line,
+.purple-line {
+    height: 3px;
+    width: 80px;
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+}
+
+.blue-line { background-color: var(--secondary-color); }
+.violet-line { background-color: var(--primary-color); }
+.purple-line { background-color: var(--purple-color); }
+.white-line{ background-color: var(--white-color); }
+
+
+/* Titres */
+.titre {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    color: var(--bg-light);
+}
+
+.titre_carte_center,
+.titre_carte_center-violet,
+.titre_carte_center-yellow,
+.titre_carte_center-red,
+.titre_carte_center-purple,
+.titre_carte_center-blue {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.titre_carte_center-violet { color: var(--primary-color); }
+.titre_carte_center-yellow { color: var(--yellow-color); }
+.titre_carte_center-red    { color: var(--red-color); }
+.titre_carte_center-purple { color: var(--purple-color); }
+.titre_carte_center-blue   { color: var(--secondary-color); }
+
+/* Services section */
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.service-list li {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.service-list li:hover {
+    background-color: var(--bg-light);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.service-list a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Présentation */
+.presentation {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.p-presentation,
+.p-philo {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/* Collaboration section */
+.image-colab {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.p-colab {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: var(--text-light);
+}
+
+/* Cartes de profil */
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.p-parag,
+.p-violet,
+.p-yellow,
+.p-red,
+.p-purple {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.page-footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.logo-footer {
+    max-width: 150px;
+    height: auto;
+}
+
+.no-bullets-footer {
+    list-style: none;
+    padding: 0;
+}
+
+.no-bullets-footer li {
+    margin: 0.5rem 0;
+}
+
+.no-bullets-footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.no-bullets-footer a:hover {
+    color: var(--primary-color);
+}
+
+.fa {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.fa:hover {
+    color: var(--primary-color);
+}
+
+.a-link img.ifm {
+  transition: box-shadow 0.3s ease;
+}
+
+.a-link:hover img.ifm {
+  box-shadow: 0 0 10px #A0A0F9;
+}
+.footer-copyright {
+    border-top: 1px solid #555;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+/* Media queries pour responsive */
+@media (max-width: 768px) {
+    .titre {
+        font-size: 1.5rem;
+    }
+
+    .titre_carte_center,
+    .titre_carte_center-violet,
+    .titre_carte_center-yellow,
+    .titre_carte_center-red,
+    .titre_carte_center-purple,
+    .titre_carte_center-blue {
+        font-size: 1.3rem;
+    }
+
+    .presentation {
+        padding: 1rem 0.5rem;
+    }
+
+    .profile-card {
+        padding: 1.5rem;
+    }
+
+    .service-list a {
+        font-size: 1.1rem;
+    }
+
+    .navbar-logo img {
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .titre {
+        font-size: 1.3rem;
+    }
+
+    .section-spacing {
+        padding: 1.5rem 0;
+    }
+
+    .profile-card {
+        padding: 1rem;
+    }
+
+    .p-presentation,
+    .p-philo {
+        font-size: 1rem;
+    }
+
+    .main-container {
+        padding: 0 10px;
+    }
+}
+
+/* Styles spécifiques pour Samsung Galaxy XCover 5 et petits écrans */
+@media screen and (max-width: 380px) and (min-width: 350px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .navbar-logo img {
+        max-height: 35px;
+    }
+
+    .titre {
+        font-size: 1.1rem;
+    }
+
+    .service-list a {
+        font-size: 1rem;
+    }
+
+    .profile-card {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-spacing {
+        padding: 1rem 0;
+    }
+}
+
+/* Utilitaires */
+.text-center { text-align: center; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mt-4 { margin-top: 1.5rem; }
+.hidden { display: none; }
+
+/* Animation fade-in */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

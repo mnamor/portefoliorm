@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <!-- Css perso -->
-        <link rel="stylesheet" href="style.css" media="all" type="text/css">
-  <link rel="stylesheet" href="style-galery.css" media="all" type="text/css">
+      <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="stylebase.css">
+<link rel="stylesheet" href="style-galery.css">
+
    
 
     <!-- icone favori-->
@@ -62,293 +64,310 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <!-- Brand -->
-        <a class="navbar-brand" href="index.html"><h1 id=logonavbar>RM</h1></a>
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html"><h1 id=logonavbar>RM </h1></a>
 
-  <!-- Links -->
-  <ul class="navbar-nav">
-     
-      
-    <li class="nav-item">
+        <!-- Links -->
+        <ul class="navbar-nav">
+             <li class="nav-item">
       <a class="nav-link" href="Design.html">Design
         </a>
     </li>
-    <li class="nav-item">
+             <li class="nav-item">
+                 <a class="nav-link" href="art.html">Art</a>
+    </li>
+            <li class="nav-item">
       <a class="nav-link" href="about.html">Qui je suis
         </a>
     </li>
-        <li class="nav-item">
-      <a class="nav-link" href="contact.html">Contact
-        </a>
-    </li>
-
-  </ul>
-    
-</nav>
-    
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+            </li>
+        </ul>
+    </nav>
+     
     <div class="line"></div>
       <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<div class="line"></div>
+
     <br>
-    
-  
-<!-- navbar boite réalisation -->    
-      <div id="box_aa">
-  <div class="container">
-    <div id="none">
-      <div id="none">
-        <div class="row">
-          <div class="col-sm-12">
-            <div id="center">
-            <ul class="no-bullets service-list">
-                <div id="box_b">
- <li class="padding-service" id="btn1" onclick="toggleDivs(1)" >Art</li>
-                </div>
-                <div id="box_b">
-  <li class="padding-service" id="btn2" onclick="toggleDivs(2)" >Design</li>
-                </div>
-</ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-    <!-- boite de dialogue dans la quelle s'affiche l'image -->
+   
+   <!-- boite de dialogue dans la quelle s'affiche l'image -->
     <div id="modal" class="modal">
   <span class="close" id="closeModal">&times;</span>
   <img id="modalImg" class="modal-content" />
   <div id="caption"></div>
 </div>
-    
-    <!--selécetion de catégprie-->
-    <!-- secetion menuiserie-->
  
-    <div id="div1" class="content">
-       
-        <div id="box_aa">
-         
-  <div class="container">
-      <h1 class="titre-center">Art</h1>
-    <div class="line"></div>
-      <br>
-  <!--  <div class="row">
-      <!-- Section galerie d'images dans box_b -->
-      <div class="col-sm-12">
-        <div id="box_none">
-          <div id="box_b">
-            <div class="gallery">
-              <div class="gallery-item horizontal">
-<img src="peinture/image%202.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/image%202.jpg">
-              </div>
-              <div class="gallery-item horizontal">
-           <img src="peinture/IMG_10.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/IMg_10">
-              </div>
-         
-                 
-              <div class="gallery-item horizontal">
-           <img src="peinture/image%201.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/image%201.jpg">
-              </div>
-                
-                             <div class="gallery-item vertical">
-<img src="peinture/IMG_7.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/IMG_7.jpg">
-              </div>
-          
-                <div class="gallery-item horizontal">
-           <img src="peinture/IMG_5.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/IMG_5.jpg">
-              </div>
-               
-             
+   <div class="container">
+  <div class="row">
+    <div class="col-12">
         
-                <div class="gallery-item horizontal">
-           <img src="peinture/IMG_11.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/IMG_11.jpg">
-              </div>
-                <div class="gallery-item horizontal">
-           <img src="peinture/IMG_12.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/IMG_12.jpg">
-              </div>
-                <div class="gallery-item horizontal">
-           <img src="peinture/IMG_13.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/IMG_13.jpg">
-              </div>
-                <div class="gallery-item horizontal">
-           <img src="peinture/IMG_14.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/IMG_14.jpg">
-              </div>
+          <div id="box_b">
+     
+      <div class="row">
+        <!-- Colonne images -->
+        <div class="col-md-6">
+          <div class="gallery d-flex flex-wrap gap-3">
+            <div class="gallery-item">
               
-              </div>
+                <img src="peinture/Design/shoose%20skate%20copie.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/Design/shoose%20skate%20copie.jpg">
               
-         
             </div>
+           
+            
           </div>
         </div>
-      </div> 
 
-  
-  </div>     
+        <!-- Colonne texte -->
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="text-white p-3">
+            <h2>Illustration de chausure</h2>
+            <p>
+              Ce projet met en valeur notre savoir-faire
+              Chaque image illustre une étape du processus créatif, combinant techniques traditionnelles et design moderne.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-       
+    </div>
+
+    
+      
         <br>
        
-  
-    <!-- div identité de marque  -->
-    <div id="div2" class="content">
-        <div id="box_aa">
-  <div class="container">
-    <h1 class="titre-center">Design</h1>
-    <div class="line"></div>
 
-    <br>
-      
-    <div class="row">
-      <!-- Section galerie d'images dans box_b -->
-      <div class="col-sm-12">
-          <!-- boite verte -->
-        <div id="box_none">
-            
-          <div id="box_b">
-            <div class="gallery">
-              <div class="gallery-item vertical">
-              </div>
-              <div class="gallery-item horizontal">
-             
-              </div>
-              <div class="gallery-item vertical">
-                
-              </div>
-              <div class="gallery-item horizontal">
-                
-              </div>
-              <div class="gallery-item vertical">
-               
-              </div>
-              <div class="gallery-item horizontal">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  
-    </div>
-     
-   
-   
-    </div>
-  </div>
-</div>
-        
-   
-     
-   
-
-    
-    <br>
-    <div id="box_aa">
-  <div class="container">
-  
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div id="box_b2">
         <div class="row">
-          <div class="col-sm-12">
-      
-            <div id="center">
-                          <div id="box_bb">
-      <div id="box_b">
-            <ul class="no-bullets service-list">
- <li class="padding-service" id="btnAll" onclick="showAllDivs()" >Afficher tous</li>
-  
-</ul>
+          <!-- Colonne images -->
+          <div class="col-md-8">
+            <div class="gallery d-flex flex-wrap gap-3">
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/couve.jpg" alt="Couverture du projet" class="gallery-img" data-full="peinture/Design/couve.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/sommaire.jpg" alt="Sommaire du projet" class="gallery-img" data-full="peinture/Design/sommaire.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/6.jpg" alt="Page 6" class="gallery-img" data-full="peinture/Design/6.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/7.jpg" alt="Page 7" class="gallery-img" data-full="peinture/Design/7.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/8%20copie.jpg" alt="Page 8 copie" class="gallery-img" data-full="peinture/Design/8%20copie.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/9.jpg" alt="Page 9" class="gallery-img" data-full="peinture/Design/9.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/10.jpg" alt="Page 10" class="gallery-img" data-full="peinture/Design/10.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/11.jpg" alt="Page 11" class="gallery-img" data-full="peinture/Design/11.jpg">
+              </div>
+              <div class="gallery-item vertical">
+                <img src="peinture/Design/12.jpg" alt="Page 12" class="gallery-img" data-full="peinture/Design/12.jpg">
+              </div>
             </div>
+          </div>
+
+          <!-- Colonne texte -->
+          <div class="col-md-4 d-flex align-items-center">
+            <div class="text-white p-3">
+              <h2>Description du projet</h2>
+              <p>
+                Ce projet met en valeur notre savoir-faire dans la menuiserie et la peinture décorative.
+                Chaque image illustre une étape du processus créatif, combinant techniques traditionnelles et design moderne.
+              </p>
+            </div>
+          </div>
+
+        </div> <!-- .row -->
+      </div> <!-- #box_b2 -->
+    </div> <!-- .col-12 -->
+  </div> <!-- .row -->
+</div> <!-- .container -->
+
+
+    
+    
+    <br>
+    
+        <div class="container">
+  <div class="row">
+    <div class="col-12">
+        
+          <div id="box_b">
+     
+      <div class="row">
+        <!-- Colonne images -->
+        <div class="col-md-6">
+          <div class="gallery d-flex flex-wrap gap-3">
+            <div class="gallery-item">
+              
+                <img src="peinture/Design/f%201%20copie.jpg" alt="Image verticale 1" class="gallery-img" data-full="peinture/Design/f%201%20copie.jpg">
+              
+            </div>
+           
+            
+          </div>
+        </div>
+
+        <!-- Colonne texte -->
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="text-white p-3">
+            <h2>Réalisation d'un jouet pour enfant</h2>
+            <p>
+              Ce projet met en valeur notre savoir-faire
+              Chaque image illustre une étape du processus créatif, combinant techniques traditionnelles et design moderne.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-     
-    
+    </div>
+
+  
+    <div class="fine-line"></div>
       <br>
     
-    
-<div class="line"></div>
-   <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
-<div id=box_footer>
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
- <div id="box_aa">
-<div class="container">
-    <div id="none">
-       <div id="box_b"> 
+       <div class="container">
   <div class="row">
-      <div class="col-sm-6">
-          <div id="padding-logo-footer">
-          <h1 id=logonavbar>RM </h1>
-              </div>
-    </div>
+    <div class="col-12">
+        
+          <div id="box_b">
      
-      <!-- lien mention légale et condition d'achat -->
-         <div class="col-sm-6">
-      <div id="none">
-       <ul class="no-bullets-footer">
-         <ul class="list-unstyled">
-             <li>Me suivre:</li>
-              <li class="a-link">
-            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-          </li>
-           <li>
-          </li>
-          <li class="hover-grey">
-            <a href= "" ><i class="ifm" aria-hidden="true"><img class="ifm" src="logo_moranastudio.png"></i>
-              </a>
-          </li>
-          <li class="a-link">
-            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-          </li>
-        </ul>
-      </ul>
-    </div>
-    </div>
-      
-  </div>
-</div>
-    </div>
-     </div>
-    </div>
-    <!-- Grid row -->
-    <div class="row">
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-        <!-- Links -->
-        <h5 class="text-uppercase"></h5>
+      <div class="row">
+        <!-- Colonne images -->
+        <div class="col-md-6">
+          <div class="gallery d-flex flex-wrap gap-3">
+            <div class="gallery-item">
+              
+                <img src="peinture/Design/montre%20info%20modif%20copie." alt="Image verticale 1" class="gallery-img" data-full="peinture/Design/montre%20info%20modif%20copie.jpg">
+              
+            </div>
+           
+            
+          </div>
+        </div>
 
-        <ul class="list-unstyled">
-          <li>
-             <a href="#!"></a>
-          </li>
-          <li>
-            <a href="#!"></a>
-          </li>
-          <li>
-            <a href="#!"></a>
-          </li>
-        </ul>
+        <!-- Colonne texte -->
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="text-white p-3">
+            <h2>Réalisation d'un jouet pour enfant</h2>
+            <p>
+              Ce projet met en valeur notre savoir-faire
+              Chaque image illustre une étape du processus créatif, combinant techniques traditionnelles et design moderne.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-<div class="footer-copyright text-center py-3"> <a href="https://github.com/mnamor"><i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-  </div>
-  <div class="footer-copyright text-center py-3">© 2023 Roman Malaplate, tout droit réservés.
-  </div>
-  </div>
-</footer>
-<!-- Footer -->
+</div>
+    </div>
+
+  
+<div class="line"></div>
+
+<div class="container">    
+    <h1 class="titre">Contact</h1>
+    <div class="line"></div>
+
+    <!-- Footer -->
+    <footer id="footer" class="">
+        <div id="box_footer">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <div class="box_footer">
+                    <div class="container">
+                        <div id="none">
+                            <div id="box_in_footer"> 
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="padding-logo-footer">
+                                            <ul class="list-unstyled">
+                                               
+                                                <li class="a-link" class="p_footer">Email: malaplateroman@gmail.com</li>
+                                                
+                                                <li class="hover-grey">Tél: 07 68 86 51 03</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- lien mention légale et condition d'achat -->
+                                    <div class="col-sm-3">
+                                        <div id="none">
+                                            <ul class="no-bullets-footer">
+                                                <ul class="list-unstyled">
+                                                    <li>Autre sites</li>
+                                                 
+                                                    <li></li>
+                                                    <li class="a-link">
+                                                        <a href="https://morana-studio.github.io/Moranasite/"><i class="a-link" aria-hidden="true"><img class="ifm" src="images/logo_moranastudio.png"></i></a>
+                                                    </li>
+                                                     
+                                                  
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- lien mention légale et condition d'achat -->
+                                    <div class="col-sm-3">
+                                        <div id="none">
+                                            <ul class="no-bullets-footer">
+                                                <ul class="list-unstyled">
+                                                    <li>Me suivre:</li>
+                                                    <li class="a-link">
+                                                        <a href="https://www.linkedin.com/in/roman-malaplate-80517291/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                    </li>
+                                                   
+                                                    <li class="a-link">
+                                                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase"></h5>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#!"></a></li>
+                        <li><a href="#!"></a></li>
+                        <li><a href="#!"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            <a href="https://github.com/mnamor"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2023 Roman Malaplate, tout droit réservés.</div>
+        
+    </footer>
+    <!-- Footer -->
+</div>
      <!-- Bootstrap JS and dependencies (for dropdown functionality) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
